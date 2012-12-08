@@ -1,0 +1,14 @@
+{
+  "name": "delicify search results",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "An extension to add delicious results to google results",
+ "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*", "https://www.google.com/*"],
+      "run_at": "document_idle",
+      "js": ["jquery.js", "myscript.js"]
+	}
+  ],
+  "permissions": [ "http://*/*", "https://*/*"]
+}
